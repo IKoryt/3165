@@ -1,0 +1,5 @@
+chmod a+x /opt/pci/rescan.sh
+systemctl enable pci-rescan
+systemctl start pci-rescan
+
+nmcli d wifi connect <SSID> password <password> ifname wls1

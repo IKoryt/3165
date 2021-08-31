@@ -1,0 +1,10 @@
+[Unit]
+Description=PCI rescan
+
+[Service]
+Type=oneshot
+ExecStart=/opt/pci/rescan.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
